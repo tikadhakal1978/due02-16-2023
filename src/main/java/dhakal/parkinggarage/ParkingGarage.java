@@ -15,11 +15,11 @@ public class ParkingGarage {
     public static void main(String[] args) {
       Scanner sc = new Scanner (System.in);
       double calculateCharge = 0, charge,hours; int numCustomer;
-      System.out.print("Enter number of customers:");
+      System.out.println("Enter number of customers:");
       numCustomer = sc.nextInt();
       
       for (int i =1; i<=numCustomer; i++){
-          System.out.print ("Enter number of hours parked for Customer- "+i+":");
+          System.out.println ("Enter number of hours parked for Customer- "+i+":");
       hours = sc.nextDouble();
       charge = 2;
       if (hours >3){
