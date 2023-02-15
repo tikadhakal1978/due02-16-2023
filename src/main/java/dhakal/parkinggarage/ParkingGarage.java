@@ -14,7 +14,7 @@ public class ParkingGarage {
 
     public static void main(String[] args) {
       Scanner sc = new Scanner (System.in);
-      double totalCharge = 0, charge,hours; int numCustomer;
+      double calculateCharge = 0, charge,hours; int numCustomer;
       System.out.print("Enter number of customers:");
       numCustomer = sc.nextInt();
       
@@ -28,9 +28,9 @@ public class ParkingGarage {
          if (charge > 10)
              charge =10;
       }
-         totalCharge +=charge;
+         calculateCharge +=charge;
          System.out.printf("Parking change for customer-%d: $%.2f\n", i,charge);
-         System.out.printf("Total charge for %d customer who parked yesterday:%.2f\n\n",i, totalCharge);
+         System.out.printf("Total charge for %d customer who parked yesterday:%.2f\n\n",i, calculateCharge);
           
       }
         
